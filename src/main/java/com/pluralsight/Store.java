@@ -87,7 +87,7 @@ public class Store {
 
 
         }      catch (Exception ex) {
-            System.out.println("file has error");
+            System.out.println("file has an error");
         }
     }
 
@@ -107,6 +107,21 @@ public class Store {
                                        Scanner scanner) {
         // TODO: show each product (id, name, price),
         //       prompt for an id, find that product, add to cart
+        for ( Product product : inventory) {
+            System.out.println(product.getId() + " | " + product.getInventry() + " | " + product.getPrice()
+            + " | " + product.getType());
+            System.out.println(" would you like to go back to menu? ");
+
+
+
+        }
+        String exit = scanner.nextLine();
+        if (exit.equalsIgnoreCase("x")) {
+            return;
+        }
+
+
+
 
 
 

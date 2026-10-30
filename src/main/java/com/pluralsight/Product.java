@@ -2,7 +2,7 @@ package com.pluralsight;
 
 public class Product {
     private String Id;
-    private String inventry;
+    private String inventory;
     private double price;
 
     public String getId() {
@@ -10,7 +10,7 @@ public class Product {
     }
 
     public String getInventry() {
-        return inventry;
+        return inventory;
     }
 
     public double getPrice() {
@@ -23,7 +23,7 @@ public class Product {
 
     public Product(String id, String inventry, double price, String type) {
         Id = id;
-        this.inventry = inventry;
+        this.inventory = inventry;
         this.price = price;
         this.type = type;
     }
